@@ -33,18 +33,6 @@ local tags = {
     type = 'files',
     defaultApp = apps.default.files,
     screen = 1
-  },
-  {
-    icon = icons.music,
-    type = 'music',
-    defaultApp = apps.default.music,
-    screen = 1
-  },
-  {
-    icon = icons.lab,
-    type = 'any',
-    defaultApp = apps.default.rofi,
-    screen = 1
   }
 }
 
@@ -53,6 +41,7 @@ awful.layout.layouts = {
   awful.layout.suit.max,
   awful.layout.suit.floating
 }
+
 
 awful.screen.connect_for_each_screen(
   function(s)
