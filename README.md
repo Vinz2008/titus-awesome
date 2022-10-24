@@ -26,7 +26,7 @@ wget -qO- https://git.io/papirus-icon-theme-install | sh
 #### Arch-Based
 
 ```
-yay -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot pnmixer network-manager-applet xfce4-power-manager qt5-styleplugins papirus-icon-theme -y
+yay -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-theme materia-kde kvantum-theme-materia lxappearance flameshot pnmixer network-manager-applet xfce4-power-manager qt5-styleplugins papirus-icon-theme -y
 ```
 
 #### Program list
@@ -78,11 +78,11 @@ sed -i '/@import/c\@import "'$HOME'/.config/awesome/theme/sidebar.rasi"' ~/.conf
 First install `qt5-style-plugins` (debian) | `qt5-styleplugins` (arch) and add this to the bottom of your `/etc/environment`
 
 ```bash
-XDG_CURRENT_DESKTOP=Unity
-QT_QPA_PLATFORMTHEME=gtk2
+XDG_CURRENT_DESKTOP=KDE
+QT_STYLE_OVERRIDE=kvantum
 ```
 
-The first variable fixes most indicators (especially electron based ones!), the second tells Qt and KDE applications to use your gtk2 theme set through lxappearance.
+The first variable fixes most indicators (especially electron based ones!), the second tells Qt and KDE applications to use your qt theme set through kvantum.
 
 ### 5) Read the documentation
 
