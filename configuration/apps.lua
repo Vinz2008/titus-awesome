@@ -18,7 +18,7 @@ return {
     browser = 'firefox',
     editor = 'code', -- gui text editor
     social = 'discord',
-    game = "parsecd",
+    game = "steam",
     files = 'dolphin',
     music = rofi_command 
   },
