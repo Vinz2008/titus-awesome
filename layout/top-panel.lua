@@ -26,7 +26,9 @@ local textclock = wibox.widget.textclock('<span font="Roboto Mono 12">%I:%M %p</
 
 -- Add a calendar (credits to kylekewley for the original code)
 local month_calendar = awful.widget.calendar_popup.month({
-  screen = s,
+  -- screen = s,
+  -- screen = trayscreen,
+  screen = awful.screen.focused(),
   start_sunday = false,
   week_numbers = true
 })
