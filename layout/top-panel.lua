@@ -16,7 +16,8 @@ local systray = wibox.widget.systray()
   systray:set_base_size(20)
   systray.forced_height = 20
 
-local trayscreen = screen[screen.count()]
+-- local trayscreen = screen[screen.count()]
+local trayscreen = screen[screen.count()-1]
 systray:set_screen(trayscreen)
   -- Clock / Calendar 24h format
 -- local textclock = wibox.widget.textclock('<span font="Roboto Mono bold 9">%d.%m.%Y\n     %H:%M</span>')

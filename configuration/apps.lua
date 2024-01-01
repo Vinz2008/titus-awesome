@@ -18,7 +18,7 @@ return {
     browser = 'firefox',
     editor = 'code', -- gui text editor
     social = 'discord',
-    game = "parsecd",
+    game = "steam-runtime",
     files = 'dolphin',
     music = rofi_command 
   },
@@ -35,6 +35,7 @@ return {
     -- 'steam -silent',
     --'feh --randomize --bg-fill ~/.wallpapers/*',
     '/usr/bin/variety',
+    'nextcloud',
     -- Add applications that need to be killed between reloads
     -- to avoid multipled instances, inside the awspawn script
     '~/.config/awesome/configuration/awspawn' -- Spawn "dirty" apps that can linger between sessions
