@@ -17,7 +17,7 @@ return {
     delayed_screenshot = 'flameshot screen -p ~/Images -d 5000',
     browser = 'firefox',
     editor = 'code', -- gui text editor
-    social = 'discord',
+    social = 'vesktop',
     game = "steam-runtime",
     files = 'dolphin',
     music = rofi_command 
